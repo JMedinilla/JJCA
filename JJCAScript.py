@@ -18,7 +18,8 @@ def cutImageInHalf(image, imageName):
     half = w//2
     firstHalf = image[0:h, 0:half]
     secondHalf = image[0:h, half:w]
-    parts = imageName.split("/", 1)[1].split(".", 1)
+    partsSlash = imageName.split("/", 2)
+    parts = partsSlash[2].split(".", 1)
     if w > h:
         r1 = os.path.join(copiesDir, parts[0] + "_a." + parts[1])
         r2 = os.path.join(copiesDir, parts[0] + "_b." + parts[1])
@@ -27,17 +28,20 @@ def cutImageInHalf(image, imageName):
     else:
         cv2.imwrite(os.path.join(copiesDir, parts[0] + "_ab." + parts[1]), image)
 
-nameDir = os.listdir()
-for n in nameDir:
-    if "py" not in n:
-        if os.path.exists(n):
-            copiesDir = n + "_copy"
-            if os.path.exists(copiesDir):
-                shutil.rmtree(copiesDir)
-            os.mkdir(copiesDir)
-            filenames = getAllImageNames()
-            for f in filenames:
-                image = cv2.imread(f)
-                cutImageInHalf(image, f)
-        else:
-            print("No folder found")
+parents = os.listdir()
+for par in parents:
+    if "py" not in par:
+        nameDir = os.listdir(par)
+        for n in nameDir:
+            n = os.path.join(par, n)
+            if os.path.exists(n):
+                copiesDir = n + "_copy"
+                if os.path.exists(copiesDir):
+                    shutil.rmtree(copiesDir)
+                os.mkdir(copiesDir)
+                filenames = getAllImageNames()
+                for f in filenames:
+                    image = cv2.imread(f)
+                    cutImageInHalf(image, f)
+            else:
+                print("No folder found")
