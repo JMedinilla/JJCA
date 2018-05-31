@@ -6,4 +6,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PartTitleStart">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:background">@color/colorBlackTransparent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="PartTitleEnd">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:background">@color/colorBlackTransparent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="PartColorBox">
+        <item name="android:textSize">36sp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="PartBackground">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textSize">54sp</item>
+        <item name="android:padding">18dp</item>
+    </style>
+
 </resources>

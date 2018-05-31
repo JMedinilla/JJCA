@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
         android:orientation="vertical">
 
         <android.support.v7.widget.CardView
@@ -20,31 +21,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_phantomBlood"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorOne"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_phantomBlood"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manright"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_phantomBlood"
+                    style="@style/PartTitleStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_phantomBlood"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|start"
-                    android:padding="4dp"
                     android:text="Phantom Blood"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -58,31 +73,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_battleTendency"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorTwo"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_battleTendency"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manleft"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_battleTendency"
+                    style="@style/PartTitleEnd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_battleTendency"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|end"
-                    android:padding="4dp"
                     android:text="Battle Tendency"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -96,31 +125,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_stardustCrusaders"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorThree"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_stardustCrusaders"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manright"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_stardustCrusaders"
+                    style="@style/PartTitleStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_stardustCrusaders"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|start"
-                    android:padding="4dp"
                     android:text="Stardust Crusaders"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -134,31 +177,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_diamondUnbreakable"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorFour"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_diamondUnbreakable"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manleft"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_diamondUnbreakable"
+                    style="@style/PartTitleEnd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_diamondUnbreakable"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|end"
-                    android:padding="4dp"
                     android:text="Diamond Is Unbreakable"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -172,31 +229,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_ventoAureo"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorFive"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_ventoAureo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manright"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_ventoAureo"
+                    style="@style/PartTitleStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_ventoAureo"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|start"
-                    android:padding="4dp"
                     android:text="Vento Aureo"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -210,31 +281,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_stoneOcean"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorSix"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_stoneOcean"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manleft"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_stoneOcean"
+                    style="@style/PartTitleEnd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_stoneOcean"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|end"
-                    android:padding="4dp"
                     android:text="Stone Ocean"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -248,31 +333,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_steelBall"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorSeven"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_steelBall"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manright"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_steelBall"
+                    style="@style/PartTitleStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_steelBall"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|start"
-                    android:padding="4dp"
                     android:text="Steel Ball Run"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -286,31 +385,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_jojolion"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorEight"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_jojolion"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manleft"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_jojolion"
+                    style="@style/PartTitleEnd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_jojolion"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|end"
-                    android:padding="4dp"
                     android:text="JoJolion"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -324,31 +437,45 @@
             app:cardCornerRadius="2dp"
             app:cardUseCompatPadding="true">
 
-            <RelativeLayout
+            <android.support.constraint.ConstraintLayout
                 android:id="@+id/layout_others"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/PartBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    style="@style/PartColorBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jojoColorOthers"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent" />
 
                 <ImageView
                     android:id="@+id/background_others"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:contentDescription="@string/app_name"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/manright"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/title_others"
+                    style="@style/PartTitleStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/background_others"
-                    android:background="@color/colorBlackTransparent"
-                    android:gravity="center_vertical|start"
-                    android:padding="4dp"
                     android:text="Others"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="16sp" />
-            </RelativeLayout>
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
