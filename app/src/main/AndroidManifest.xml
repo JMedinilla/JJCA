@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name">
@@ -21,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".ParteActivity" />
+        <activity android:name=".VolumenActivity" />
+        <activity android:name=".LectorActivity" />
     </application>
+
 </manifest>

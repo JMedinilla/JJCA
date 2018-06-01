@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimaryLight">#DFBFFF</color>
     <color name="colorPrimary">#7435B2</color>
     <color name="colorPrimaryDark">#472393</color>
     <color name="colorAccent">#FFD3E9</color>
     <color name="colorWhite">#FFF</color>
     <color name="colorBlackTransparent">#22000000</color>
 
-    <color name="jojoColorOne">#AC68D1</color>
-    <color name="jojoColorTwo">#7AE074</color>
-    <color name="jojoColorThree">#1C9CFF</color>
-    <color name="jojoColorFour">#FFC642</color>
-    <color name="jojoColorFive">#F44E5C</color>
-    <color name="jojoColorSix">#0077D3</color>
-    <color name="jojoColorSeven">#DB23AD</color>
-    <color name="jojoColorEight">#FF9D1E</color>
-    <color name="jojoColorOthers">#FF84C3</color>
+    <color name="jojoColorOne">#DB99FF</color>
+    <color name="jojoColorTwo">#9EFF99</color>
+    <color name="jojoColorThree">#99D2FF</color>
+    <color name="jojoColorFour">#FFF399</color>
+    <color name="jojoColorFive">#FF9999</color>
+    <color name="jojoColorSix">#4CB1FF</color>
+    <color name="jojoColorSeven">#FF7FDF</color>
+    <color name="jojoColorEight">#FFB14C</color>
+    <color name="jojoColorOthers">#FF7FC1</color>
 </resources>
