@@ -1,6 +1,7 @@
 import cv2
 import glob
 import os
+import platform
 import shutil
 
 def getAllImageNames():
@@ -18,7 +19,10 @@ def cutImageInHalf(image, imageName):
     half = w//2
     firstHalf = image[0:h, 0:half]
     secondHalf = image[0:h, half:w]
-    partsSlash = imageName.split("/", 2)
+    if platform.system() == "Windows":
+        partsSlash = imageName.split("\\", 2)
+    else:
+        partsSlash = imageName.split("/", 2)
     parts = partsSlash[2].split(".", 1)
     if w > h:
         r1 = os.path.join(copiesDir, parts[0] + "_a." + parts[1])

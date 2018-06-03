@@ -8,9 +8,9 @@
 
     <style name="PartTitle">
         <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/permanent_marker</item>
         <item name="android:textSize">18sp</item>
         <item name="android:padding">6dp</item>
-        <item name="android:fontFamily">@font/arial_narrow_bold_italic</item>
     </style>
 
     <style name="PartTitleStart" parent="PartTitle">
@@ -22,13 +22,15 @@
     </style>
 
     <style name="PartColorBox">
-        <item name="android:textSize">45sp</item>
-        <item name="android:padding">15dp</item>
+        <item name="android:fontFamily">@font/permanent_marker</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:padding">14dp</item>
     </style>
 
     <style name="PartBackground">
-        <item name="android:textSize">72sp</item>
-        <item name="android:padding">24dp</item>
+        <item name="android:fontFamily">@font/permanent_marker</item>
+        <item name="android:textSize">66sp</item>
+        <item name="android:padding">22dp</item>
     </style>
 
 </resources>

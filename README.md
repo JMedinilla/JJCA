@@ -2,8 +2,8 @@
 
 Proyecto en 2 partes:
 
-- Aplicación Android (Sin comenzar)
-- Script en Python (En progreso)
+- Aplicación Android (Estamos trabajando en ello)
+- Scripts en Python (Terminados)
 
 # Descripción
 
