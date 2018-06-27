@@ -20,9 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ParteActivity" />
-        <activity android:name=".VolumenActivity" />
-        <activity android:name=".LectorActivity" />
     </application>
 
 </manifest>

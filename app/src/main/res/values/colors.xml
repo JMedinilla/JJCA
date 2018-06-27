@@ -8,13 +8,13 @@
     <color name="colorBlackTransparent">#22000000</color>
 
     <color name="colorNavigationItemActive">#FFFFFF</color>
-    <color name="colorNavigationItem">#CCCCCC</color>
+    <color name="colorNavigationItem">#BBBBBB</color>
 
     <color name="jojoColorOne">#7986CB</color>
     <color name="jojoColorTwo">#AED581</color>
     <color name="jojoColorThree">#4FC3F7</color>
     <color name="jojoColorFour">#FFD54F</color>
-    <color name="jojoColorFive">#e57373</color>
+    <color name="jojoColorFive">#E57373</color>
     <color name="jojoColorSix">#64B5F6</color>
     <color name="jojoColorSeven">#F06292</color>
     <color name="jojoColorEight">#FFB74D</color>
