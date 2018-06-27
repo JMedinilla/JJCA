@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimaryLight">#673AB7</color>
+    <color name="colorPrimaryRipple">#44512DA8</color>
     <color name="colorPrimary">#512DA8</color>
     <color name="colorPrimaryDark">#311B92</color>
     <color name="colorAccent">#2196F3</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlackTransparent">#22000000</color>
-
-    <color name="colorNavigationItemActive">#FFFFFF</color>
-    <color name="colorNavigationItem">#BBBBBB</color>
 
     <color name="jojoColorOne">#7986CB</color>
     <color name="jojoColorTwo">#AED581</color>
