@@ -3,4 +3,23 @@
     <string name="navigation_books">Books</string>
     <string name="navigation_downloads">Downloads</string>
     <string name="navigation_settings">Settings</string>
+
+    <string name="jojoTitleOne">Phantom Blood</string>
+    <string name="jojoTitleTwo">Battle Tendency</string>
+    <string name="jojoTitleThree">Stardust Crusaders</string>
+    <string name="jojoTitleFour">Diamond is Unbreakable</string>
+    <string name="jojoTitleFive">Vento Aureo</string>
+    <string name="jojoTitleSix">Stone Ocean</string>
+    <string name="jojoTitleSeven">Steel Ball Run</string>
+    <string name="jojoTitleEight">Jojolion</string>
+    <string name="jojoTitleOthers">Others</string>
+    <string name="jojoDescOne">5 volumes</string>
+    <string name="jojoDescTwo">7 volumes</string>
+    <string name="jojoDescThree">16 volumes</string>
+    <string name="jojoDescFour">18 volumes</string>
+    <string name="jojoDescFive">17 volumes</string>
+    <string name="jojoDescSix">17 volumes</string>
+    <string name="jojoDescSeven">24 volumes</string>
+    <string name="jojoDescEight">10 volumes</string>
+    <string name="jojoDescOthers">Jojo\'s related content</string>
 </resources>

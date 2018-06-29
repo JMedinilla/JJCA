@@ -1,12 +1,13 @@
-package ncatz.jvmed.jjca
+package ncatz.jvmed.jjca.home
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_home.*
-import ncatz.jvmed.jjca.fragments.BooksFragment
-import ncatz.jvmed.jjca.fragments.DownloadsFragment
-import ncatz.jvmed.jjca.fragments.SettingsFragment
+import ncatz.jvmed.jjca.R
+import ncatz.jvmed.jjca.home.fragment.BooksFragment
+import ncatz.jvmed.jjca.home.fragment.DownloadsFragment
+import ncatz.jvmed.jjca.home.fragment.SettingsFragment
 
 class HomeActivity : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        navigation.setOnNavigationItemSelectedListener {
+        home_navigation.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home_navigation_books -> {
                     launchFragment(BooksFragment())

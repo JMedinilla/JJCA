@@ -1,4 +1,4 @@
-package ncatz.jvmed.jjca
+package ncatz.jvmed.jjca.utils
 
 import android.app.Application
 
