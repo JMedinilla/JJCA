@@ -17,23 +17,7 @@ class HomeDrawer : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         home_drawer.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.navigation_home_pb -> {
-                }
-                R.id.navigation_home_bt -> {
-                }
-                R.id.navigation_home_sc -> {
-                }
-                R.id.navigation_home_diu -> {
-                }
-                R.id.navigation_home_va -> {
-                }
-                R.id.navigation_home_so -> {
-                }
-                R.id.navigation_home_sbr -> {
-                }
-                R.id.navigation_home_jl -> {
-                }
-                R.id.navigation_home_ot -> {
+                R.id.navigation_home_settings -> {
                 }
             }
             true

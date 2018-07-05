@@ -5,9 +5,9 @@
     <application
         android:name=".utils.App"
         android:allowBackup="false"
-        android:icon="@drawable/anchor"
+        android:icon="@mipmap/p07v01"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/anchor"
+        android:roundIcon="@mipmap/p07v01"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 

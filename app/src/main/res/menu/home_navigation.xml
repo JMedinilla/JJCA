@@ -3,49 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:checkableBehavior="none">
         <item
-            android:id="@+id/navigation_home_pb"
-            android:icon="@drawable/anchor"
-            android:title="Phantom Blood"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_bt"
-            android:icon="@drawable/anchor"
-            android:title="Battle Tendency"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_sc"
-            android:icon="@drawable/anchor"
-            android:title="Stardust Crusaders"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_diu"
-            android:icon="@drawable/anchor"
-            android:title="Diamond is Unbreakable"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_va"
-            android:icon="@drawable/anchor"
-            android:title="Vento Aureo"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_so"
-            android:icon="@drawable/anchor"
-            android:title="Stone Ocean"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_sbr"
-            android:icon="@drawable/anchor"
-            android:title="Steel Ball Run"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_jl"
-            android:icon="@drawable/anchor"
-            android:title="Jojolion"
-            app:showAsAction="never" />
-        <item
-            android:id="@+id/navigation_home_ot"
-            android:icon="@drawable/anchor"
-            android:title="Others"
+            android:id="@+id/navigation_home_settings"
+            android:icon="@drawable/navigation_settings"
+            android:title="Settings"
             app:showAsAction="never" />
     </group>
 </menu>

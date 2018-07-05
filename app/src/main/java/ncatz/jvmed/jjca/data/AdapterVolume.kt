@@ -32,8 +32,7 @@ class AdapterVolume(val volumes: List<Volume>) : RecyclerView.Adapter<AdapterVol
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.adapter_volume, parent, false)
-    )
+            LayoutInflater.from(parent.context).inflate(R.layout.adapter_volume, parent, false))
 
     override fun getItemCount() = volumes.size
 

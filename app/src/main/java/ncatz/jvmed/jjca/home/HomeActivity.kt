@@ -1,7 +1,6 @@
 package ncatz.jvmed.jjca.home
 
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,11 +20,15 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_activity)
         setSupportActionBar(home_bottombar)
-    }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.home_menu, menu)
-        return true
+        phantomList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        battleList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        stardustList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        diamondList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        ventoList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        stoneList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        steelList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
+        jojolionList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -34,8 +37,6 @@ class HomeActivity : AppCompatActivity() {
                 val drawer = HomeDrawer()
                 drawer.show(supportFragmentManager, drawer.tag)
             }
-            R.id.menu_home_settings -> {
-            }
         }
         return true
     }
@@ -43,31 +44,28 @@ class HomeActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        val phantomBlood = readPart(R.raw.phantom_blood)
-        val battleTendency = readPart(R.raw.battle_tendency)
-        val stardustCrusaders = readPart(R.raw.stardust_crusaders)
-        val diamondIsUnbreakable = readPart(R.raw.diamond_is_unbreakable)
-        val ventoAureo = readPart(R.raw.vento_aureo)
-        val stoneOcean = readPart(R.raw.stone_ocean)
-        val steelBallRun = readPart(R.raw.steel_ball_run)
-        val jojolion = readPart(R.raw.jojolion)
+        val thread = Thread(Runnable {
+            val phantomBlood = readPart(R.raw.phantom_blood)
+            val battleTendency = readPart(R.raw.battle_tendency)
+            val stardustCrusaders = readPart(R.raw.stardust_crusaders)
+            val diamondIsUnbreakable = readPart(R.raw.diamond_is_unbreakable)
+            val ventoAureo = readPart(R.raw.vento_aureo)
+            val stoneOcean = readPart(R.raw.stone_ocean)
+            val steelBallRun = readPart(R.raw.steel_ball_run)
+            val jojolion = readPart(R.raw.jojolion)
 
-        phantomList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        phantomList.adapter = AdapterVolume(phantomBlood.volumes)
-        battleList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        battleList.adapter = AdapterVolume(battleTendency.volumes)
-        stardustList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        stardustList.adapter = AdapterVolume(stardustCrusaders.volumes)
-        diamondList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        diamondList.adapter = AdapterVolume(diamondIsUnbreakable.volumes)
-        ventoList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        ventoList.adapter = AdapterVolume(ventoAureo.volumes)
-        stoneList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        stoneList.adapter = AdapterVolume(stoneOcean.volumes)
-        steelList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        steelList.adapter = AdapterVolume(steelBallRun.volumes)
-        jojolionList.layoutManager = LinearLayoutManager(this, OrientationHelper.HORIZONTAL, false)
-        jojolionList.adapter = AdapterVolume(jojolion.volumes)
+            runOnUiThread {
+                phantomList.adapter = AdapterVolume(phantomBlood.volumes)
+                battleList.adapter = AdapterVolume(battleTendency.volumes)
+                stardustList.adapter = AdapterVolume(stardustCrusaders.volumes)
+                diamondList.adapter = AdapterVolume(diamondIsUnbreakable.volumes)
+                ventoList.adapter = AdapterVolume(ventoAureo.volumes)
+                stoneList.adapter = AdapterVolume(stoneOcean.volumes)
+                steelList.adapter = AdapterVolume(steelBallRun.volumes)
+                jojolionList.adapter = AdapterVolume(jojolion.volumes)
+            }
+        })
+        thread.start()
     }
 
     private fun readPart(part: Int): Part {
